@@ -9,6 +9,7 @@
     display: flex;
     height: 100vh;
     flex-direction: row;
+    flex-wrap: wrap;
     }
     
 
@@ -87,15 +88,35 @@
     }
 
     .Superior{
-        width: 100%;
+        width: 80%;
     }
     
     .A{
     width: 100%;
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(131, 131, 131);
     display: flex;
-    height: 40%;
-    flex-direction: wrap;
+    height: 30%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 30px;
+    }
+
+    .E a{
+    color: black;
+    background-color: bisque;
+    border-radius: 5%;
+    padding: 1%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    transition: font-size 2s linear ;
+    color: brown;
+    font-size: 20px ;
+    }
+
+    .E a:hover{
+    transform: rotate(360deg);
+    transition: background-color 1s ease-out, transform 1s linear;
     }
